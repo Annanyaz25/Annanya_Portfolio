@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects – Anannya Zadbuke</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script defer src="projects.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">Anannya Zadbuke</div>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="index.html#certs">Certifications</a>
+      <a href="index.html#leadership">Leadership</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="btn" href="portfolio.pdf" target="_blank" rel="noopener">PDF</a>
+  </header>
+
+  <main class="section">
+    <h2>Projects</h2>
+    <p class="muted">Browse by category or view all.</p>
+
+    <div class="filters">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="hardware">Hardware</button>
+      <button class="chip" data-filter="data">Data Analytics</button>
+      <button class="chip" data-filter="web">Web</button>
+      <button class="chip" data-filter="signal">Signal/Embedded</button>
+    </div>
+
+    <div class="grid two project-grid">
+      <article class="card project hardware">
+        <h3>High‑Power All‑Metal Vivaldi Antenna</h3>
+        <p>Designed and optimized for telecom, radar, and satellite applications. Collaboration with Exosense Systems; research paper in progress.</p>
+        <ul>
+          <li>Geometry optimization, impedance matching, material selection</li>
+          <li>High‑power handling and wideband performance</li>
+        </ul>
+      </article>
+
+      <article class="card project signal">
+        <h3>Frequency Peak Detector (STM32)</h3>
+        <p>FFT‑based real‑time peak detection for audio/signal diagnostics with high sampling accuracy.</p>
+      </article>
+
+      <article class="card project signal">
+        <h3>FPGA‑Based Random Number Generator</h3>
+        <p>LFSR on Spartan‑6 FPGA for secure randomness used in simulations and cryptography.</p>
+      </article>
+
+      <article class="card project web">
+        <h3>Digital Notice Board (Arduino + Web)</h3>
+        <p>IoT‑enabled notice board with real‑time updates and remote control via simple web UI.</p>
+      </article>
+
+      <article class="card project data">
+        <h3>Wipro – Data Analytics Assignments</h3>
+        <p>Training + industry projects: dataset cleaning, trend analysis (Python/SQL), and dashboards (Excel/Power BI).</p>
+        <ul>
+          <li>Automated cleaning pipelines; reusable templates</li>
+          <li>KPI dashboards and ad‑hoc reporting</li>
+        </ul>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Anannya Zadbuke</footer>
+</body>
+</html>
